@@ -20,7 +20,7 @@ defmodule ChirpWeb.PostLive.PostComponent do
           <i class="far fa-heart"></i> <%= @post.likes_count %>
         </div>
         <div class="column">
-          <span class="icon fa-copy"></span> <%= @post.reposts_count %>
+          <span class="far fa-copy"></span> <%= @post.reposts_count %>
         </div>
         <div class="column">
           <%= live_patch to: Routes.post_index_path(@socket, :edit, @post.id) do %>
